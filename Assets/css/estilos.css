@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff5fa;
+}
+
+/* HEADER */
+header {
+    background: #ff9ecf;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    padding: 50px;
+    text-align: center;
+    background: #ffd6ea;
+}
+
+/* PRODUCTOS */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 25px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px #0002;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+/* PRODUCTO DETALLE */
+.producto-detalle {
+    display: flex;
+    padding: 25px;
+    gap: 20px;
+}
+
+.producto-img img {
+    width: 300px;
+}
+
+.relacionados-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+
+/* CONTACTO */
+.contacto {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+/* CARRITO */
+.carrito ul {
+    list-style: none;
+    padding: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #ff9ecf;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+    color: white;
+}

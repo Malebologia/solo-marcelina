@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Solo Marcelina</title>
+    <link rel="stylesheet" href="Assets/css/estilos.css" />
+</head>
+<body>
+
+<header>
+    <h1>Contacto</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sobre.html">Sobre Nosotros</a>
+        <a href="carrito.html">Carrito</a>
+    </nav>
+</header>
+
+<section class="contacto">
+    <h2>Envíanos un mensaje</h2>
+
+    <form id="contacto-form">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Mensaje:</label>
+        <textarea id="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="respuesta"></p>
+</section>
+
+<script>
+const form = document.getElementById("contacto-form");
+const respuesta = document.getElementById("respuesta");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    respuesta.textContent = "¡Gracias por tu mensaje! Te responderemos pronto.";
+    form.reset();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Producto - Solo Marcelina</title>
+    <link rel="stylesheet" href="Assets/css/estilos.css" />
+</head>
+<body>
+
+<header>
+    <h1>Detalle del Producto</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<section class="producto-detalle">
+
+    <div class="producto-img">
+        <img src="img/producto-demo.jpg" alt="Producto" />
+    </div>
+
+    <div class="producto-info">
+        <h2 id="prod-nombre">Nombre del Producto</h2>
+        <p id="prod-descripcion">Descripción del producto, beneficios y características principales.</p>
+        <h3 id="prod-precio">$9.990</h3>
+
+        <button id="agregar-detalle" 
+                data-nombre="Nombre del Producto" 
+                data-precio="9990">
+            Agregar al carrito
+        </button>
+    </div>
+
+</section>
+
+<section class="relacionados">
+    <h2>Productos relacionados</h2>
+    <div class="relacionados-grid">
+        <div class="card">
+            <img src="img/rel1.jpg" alt="Relacionado 1">
+            <h3>Relacionado 1</h3>
+            <p>$7.990</p>
+        </div>
+
+        <div class="card">
+            <img src="img/rel2.jpg" alt="Relacionado 2">
+            <h3>Relacionado 2</h3>
+            <p>$8.490</p>
+        </div>
+
+        <div class="card">
+            <img src="img/rel3.jpg" alt="Relacionado 3">
+            <h3>Relacionado 3</h3>
+            <p>$6.990</p>
+        </div>
+    </div>
+</section>
+
+<script src="Assets/js/script.js"></script>
+</body>
+</html>
